@@ -24,10 +24,10 @@ export default function Home() {
           <Notification text="Anncouning the new line of Affordable PC's under $500" />
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Buy Prebuilt PCs for the same price as custom built PC's
+              Buy Prebuilt PCs for the same price as custom built PCs
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Nimay's Hardware Shoppe Gives leading quality PC builds for all types at an affordable price.
+              Nimays Hardware Shoppe Gives leading quality PC builds for all types at an affordable price.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -41,7 +41,7 @@ export default function Home() {
               </a>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mt-64">
-              Buy Prebuilt PCs for the same price as custom built PC's
+              Buy Prebuilt PCs for the same price as custom built PCs
             </h1>
           </div>
         </div>

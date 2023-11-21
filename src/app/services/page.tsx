@@ -24,10 +24,10 @@ export default function Home() {
                     <Notification text="Anncouning The Soilder Antivirus that helps protect your PC " />
                     <div className="text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            Services, that help extend your PC's Life Span for cheap
+                            Services that help extend your PCs Life Span for cheap
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Nimay's Hardware Shoppe's Services help protect your PC's from accidental mistakes, and cyber attacks while remaining affordable.
+                            Nimays Hardware Shoppe Services help protect your PCs from accidental mistakes, and cyber attacks while remaining affordable.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <a
@@ -43,7 +43,7 @@ export default function Home() {
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mt-64">
                             Our Services
                         </h1>
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 mt-10 sm:text-6xl mt-20">
+                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 mt-10 sm:text-6xl">
                             The Soilder Antivirus Solutions
                         </h1>
                         <div className='align-center mr-auto ml-auto'>
@@ -51,11 +51,6 @@ export default function Home() {
                                 <Image src='/antiviruslogo.png' alt="Antivirus logo" className='block ml-auto mr-auto w-1/2' width="320" height="320" />
                             </a>
                         </div>
-                        <div className='mt-20'>
-                            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>Our Plans</h1>
-
-                        </div>
-
                     </div>
                 </div>
                 <div

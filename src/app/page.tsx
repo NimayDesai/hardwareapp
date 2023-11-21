@@ -20,12 +20,12 @@ export default function MainPage() {
                 </div>
                 <div className="text-center scroll pt-52">
                     <Notification text="Anncouning the new line of Affordable PC's under $500" />
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Welcome to the Nimay's Hardware Shoppe</h1>
-                    <p className="text-xl pt-8">At Nimay's Hardware Shoppe, we offer many PC Builds, and services to help create a healthier computing life</p>
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Welcome to the Nimays Hardware Shoppe</h1>
+                    <p className="text-xl pt-8">At Nimays Hardware Shoppe, we offer many PC Builds, and services to help create a healthier computing life</p>
                 </div>
                 <div className="text-center scroll pt-52">
                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl inline">PC Builds</h1>
-                    <p className="text-xl pt-8">Our Pre-Puilt PC's provide great value, that have similar price to custom website</p>
+                    <p className="text-xl pt-8">Our Pre-Puilt PCs provide great value, that have similar price to custom website</p>
                     <div className="mt-10">
                         <a
                             href="/pcbuilds"
