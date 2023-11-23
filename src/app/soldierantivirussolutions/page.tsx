@@ -1,7 +1,14 @@
 import Image from 'next/image'
 import { NavBar } from '../navbar'
 import { Notification } from '../notificaiton'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBug, faDollarSign, faGear, faGlobe, faShield, faShieldHalved, faUser } from '@fortawesome/free-solid-svg-icons'
 
+const stats = [
+    { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
+    { id: 2, name: 'Assets under holding', value: '$119 trillion' },
+    { id: 3, name: 'New users annually', value: '46,000' },
+]
 export default function Home() {
     return (
         <div>
@@ -12,15 +19,9 @@ export default function Home() {
                     className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                     aria-hidden="true"
                 >
-                    <div
-                        className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-                        style={{
-                            clipPath:
-                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                        }}
-                    />
+
                 </div>
-                <div className="mx-auto max-w-2xl py-32">
+                <div className="mx-auto max-w-4xl">
                     <Notification text="Anncouning The Soilder Antivirus that helps protect your PC " />
                     <div className="text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -272,10 +273,58 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className='mt-10'>
-                            <h1 className='text-6xl font-bold tracking-tight text-gray-900 mt-20'>Soldier Antivirus Dectects 95% of Threats</h1>
-
-                        </div>
+                        <section className="bg-white dark:bg-gray-900">
+                            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                                <div className="max-w-screen-md mb-8 lg:mb-16">
+                                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Why Sodier Antivirus?</h2>
+                                    <p className="text-gray-500 sm:text-xl dark:text-gray-400">Sodlier Antivirus offers many benefits that other companies may not offer</p>
+                                </div>
+                                <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                                    <div>
+                                        <div className="flex mr-auto ml-auto justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                            <FontAwesomeIcon icon={faBug} size="lg" className='ml-auto mr-auto' />
+                                        </div>
+                                        <h3 className="mb-2 text-xl font-bold dark:text-white">Remove Viruses with a click</h3>
+                                        <p className="text-gray-500 dark:text-gray-400">With Sodlier Antivirus, you can instantly remove dangerous files with a click with our advanced Scanner</p>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 mr-auto ml-auto lg:h-12 lg:w-12 dark:bg-primary-900">
+                                            <FontAwesomeIcon icon={faShieldHalved} />
+                                        </div>
+                                        <h3 className="mb-2 text-xl font-bold dark:text-white">Protect your PC</h3>
+                                        <p className="text-gray-500 dark:text-gray-400">Experience security from people trying to steal your data, and money</p>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 mr-auto ml-auto lg:h-12 lg:w-12 dark:bg-primary-900">
+                                            <FontAwesomeIcon icon={faGlobe} />
+                                        </div>
+                                        <h3 className="mb-2 text-xl font-bold dark:text-white">Business Automation</h3>
+                                        <p className="text-gray-500 dark:text-gray-400">Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.</p>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 ml-auto mr-auto lg:h-12 lg:w-12 dark:bg-primary-900">
+                                            <FontAwesomeIcon icon={faDollarSign} />
+                                        </div>
+                                        <h3 className="mb-2 text-xl font-bold dark:text-white">Finance</h3>
+                                        <p className="text-gray-500 dark:text-gray-400">Audit-proof software built for critical financial operations like month-end close and quarterly budgeting.</p>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 ml-auto mr-auto lg:h-12 lg:w-12 dark:bg-primary-900">
+                                            <FontAwesomeIcon icon={faUser} />
+                                        </div>
+                                        <h3 className="mb-2 text-xl font-bold dark:text-white">Enterprise Design</h3>
+                                        <p className="text-gray-500 dark:text-gray-400">Craft beautiful, delightful experiences for both marketing and product with real cross-company collaboration.</p>
+                                    </div>
+                                    <div>
+                                        <div className="flex justify-center items-center mb-4 w-10 h-10 mr-auto ml-auto rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                            <FontAwesomeIcon icon={faGear} />
+                                        </div>
+                                        <h3 className="mb-2 text-xl font-bold dark:text-white">Operations</h3>
+                                        <p className="text-gray-500 dark:text-gray-400">Keep your companys lights on with customizable, iterative, and structured workflows built for all efficient teams and individual.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
                     </div>
                 </div>
@@ -283,13 +332,6 @@ export default function Home() {
                     className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
                     aria-hidden="true"
                 >
-                    <div
-                        className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-                        style={{
-                            clipPath:
-                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                        }}
-                    />
                 </div>
             </div>
         </div >
